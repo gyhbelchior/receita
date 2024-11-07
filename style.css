@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+:root {
+  font-family: "Alice", serif;
+  line-height: 150%;
+  color: #573A37;
+}
+
+.background {
+  position: fixed; /* Fixa o fundo para cobrir a tela mesmo ao rolar */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Largura total da viewport */
+  height: 100vh; /* Altura total da viewport */
+  background-image: url(assets/bg.png);
+  background-size: cover; /* Faz a imagem cobrir toda a área */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita que a imagem se repita */
+  z-index: -1; /* garante que a imagem fique no plano de fundo, atrás do conteúdo. */
+  filter: blur(12px);
+  background-color: rgba(105, 81, 54, 0.5);/* lightgray com 50% de opacidade */
+  background-blend-mode: overlay; /* Mistura a cor de fundo com a imagem */
+ 
+}
+
+#page {
+  box-sizing: border-box;
+  width: 800px;
+  padding: 24px;
+  background-color: #F0E8C2;
+  border-radius: 24px;
+  margin: 48px auto 28px;
+}
+
+main {
+  padding: 24px;
+}
+
+section + section {
+  margin-top: 24px;
+}
+
+#about p + p {  /* p + p significa, p anterior ao p que tem a margem de 12 px. */
+  margin-top: 12px;
+}
+
+h1 {
+  line-height: 140%;
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h1, h2 {
+  color: #291B1A;
+  margin-top: 4px;
+  line-height: 150%;
+}
+
+ul {
+  padding-left: 24px;
+}
+
+footer {
+  color: #F0E8C2;
+  text-align: center;
+  padding-bottom: 48px;
+  vertical-align: middle; /* mais pra frente vamos usar mais flex-box */
+}
